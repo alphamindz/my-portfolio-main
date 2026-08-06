@@ -1,0 +1,89 @@
+.cert-section {
+  padding: 80px 20px;
+  background: #0f0c29;
+  text-align: center;
+  min-height: 60vh;
+}
+
+.section-title {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.highlight { color: #00d4ff; }
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  padding: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.cert-card:hover {
+  background: rgba(0, 212, 255, 0.1);
+  transform: translateY(-10px);
+  border-color: #00d4ff;
+}
+
+.view-btn {
+  display: inline-block;
+  margin-top: 15px;
+  color: #00d4ff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/* Modal Styling */
+.cert-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00d4ff;
+  animation: zoomIn 0.3s ease;
+}
+
+.close-modal {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.5); }
+  to { transform: scale(1); }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 768px) {
+  .section-title { font-size: 2rem; }
+  .cert-grid { grid-template-columns: 1fr; }
+}

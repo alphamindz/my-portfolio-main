@@ -1,0 +1,33 @@
+/* डिफ़ॉल्ट मार्जिन और पैडिंग हटाएँ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: flex-start; /* center से हटाकर top अलाइन किया */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #0f0c29; /* आपकी डार्क थीम के लिए */
+  overflow-x: hidden; /* मोबाइल पर साइड स्क्रॉल रोकने के लिए */
+}
+
+#root {
+  width: 100%; /* max-width हटाकर 100% किया */
+  margin: 0;
+  padding: 0;
+}
+
+/* स्मूथ स्क्रॉलिंग के लिए */
+html {
+  scroll-behavior: smooth;
+}
+
+/* लिंक्स के लिए ग्लोबल स्टाइल */
+a {
+  text-decoration: none;
+  color: inherit;
+}

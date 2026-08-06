@@ -1,0 +1,35 @@
+.projects-section {
+  padding: 80px 20px;
+  background: #0a0a1a;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #7f5af0, #2cb67d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.no-projects {
+  text-align: center;
+  color: #aaa;
+  grid-column: 1 / -1;
+}

@@ -1,0 +1,101 @@
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(127, 90, 240, 0.3);
+}
+
+.project-image-link {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-image-link:hover .project-image {
+  transform: scale(1.08);
+}
+
+.project-image-link:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-overlay span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-title {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  color: #b3b3cc;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.tech-badge {
+  background: rgba(127, 90, 240, 0.15);
+  color: #7f5af0;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+}
+
+.project-link-btn {
+  display: inline-block;
+  color: #2cb67d;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-link-btn:hover {
+  color: #7f5af0;
+}

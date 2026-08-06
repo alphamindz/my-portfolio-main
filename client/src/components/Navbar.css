@@ -1,0 +1,105 @@
+/* --- Desktop Setup --- */
+.navbar {
+  background: #1a1a2e;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.logo-dot { color: #00d4ff; }
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover { color: #00d4ff; }
+
+.admin-link {
+  background: #00d4ff;
+  color: #1a1a2e !important;
+  padding: 8px 18px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* --- Hamburger Styles --- */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background: white;
+}
+
+/* --- RESPONSIVE LOGIC --- */
+
+/* Mobile & Tablet (< 768px) */
+@media screen and (max-width: 768px) {
+  .hamburger { display: block; }
+
+  /* एनिमेटेड Hamburger to X */
+  .hamburger.is-active .bar:nth-child(2) { opacity: 0; }
+  .hamburger.is-active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .hamburger.is-active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  .nav-links {
+    position: fixed;
+    top: 80px;
+    left: -100%; /* स्क्रीन के बाहर */
+    flex-direction: column;
+    background: #1a1a2e;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s;
+    gap: 3rem;
+    padding-top: 3rem;
+  }
+
+  .nav-links.active {
+    left: 0; /* क्लिक करने पर अंदर आएगा */
+  }
+
+  .nav-links a { font-size: 1.4rem; }
+}
+
+/* Tablets (Between 769px and 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .nav-links { gap: 1rem; }
+  .nav-links a { font-size: 0.9rem; }
+}
