@@ -10,7 +10,8 @@ const Certifications = () => {
       title: "Full Stack Web Development (Delta)",
       issuer: "Apna College",
       date: "Jan 2026",
-      image: "https://via.placeholder.com/600x400", // यहाँ अपनी सर्टिफिकेट इमेज का पाथ डालें
+      image: "/images/certificate-delta.png",
+      link: "/images/certificate-delta.png",
     },
     {
       id: 2,
@@ -24,10 +25,13 @@ const Certifications = () => {
   return (
     <section id="certifications" className="cert-section">
       <h2 className="section-title">My <span className="highlight">Certifications</span></h2>
-      
+
       <div className="cert-grid">
         {certs.map((cert) => (
           <div key={cert.id} className="cert-card" onClick={() => setSelectedImg(cert.image)}>
+            <div className="cert-image">
+              <img src={cert.image} alt={cert.title} />
+            </div>
             <div className="cert-info">
               <h3>{cert.title}</h3>
               <p>{cert.issuer} | {cert.date}</p>
@@ -41,7 +45,7 @@ const Certifications = () => {
       {selectedImg && (
         <div className="cert-modal" onClick={() => setSelectedImg(null)}>
           <span className="close-modal">&times;</span>
-          <img src={selectedImg} alt="Enlarged Certificate" className="modal-content" />
+          <img src={selectedImg} alt="Enlarged Certificate" className="modal-content" onClick={(e) => e.stopPropagation()} />
         </div>
       )}
     </section>

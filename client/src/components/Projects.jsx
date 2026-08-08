@@ -3,30 +3,33 @@ import ProjectCard from './ProjectCard';
 import './Projects.css';
 
 const projectsData = [
-  {
-    _id: '1',
-    title: 'Skill Nebula (E-Learning Platform)',
-    description: 'CS fundamentals sikhane wala full-stack e-learning platform, students aur instructors ke liye dual-role system ke saath. Next.js + Prisma + PostgreSQL se bana hai.',
-    tech: ['Next.js', 'Prisma', 'PostgreSQL', 'Tailwind CSS'],
-    link: 'https://skill-lab-flax.vercel.app/',
-    image: '/images/skill-nebula.png',
-  },
+ {
+  _id: '1',
+  title: 'Skill Nebula (E-Learning Platform)',
+  description: 'A full-stack e-learning platform designed to teach CS fundamentals, featuring a dual-role system for students and instructors.',
+  impact: 'Streamlined core computer science learning by providing structured courses and enabling seamless management for both instructors and learners.',
+  tech: ['Next.js', 'Prisma', 'PostgreSQL', 'Tailwind CSS'],
+  link: 'https://skill-lab-flax.vercel.app/',
+  image: '/images/skill-nebula.png',
+},
   {
     _id: '2',
     title: 'StayZen (Airbnb Clone)',
-    description: 'Airbnb jaisa full-stack booking platform — property listing, search, aur booking flow ke saath simple aur clean UI.',
+    description: 'A full-stack rental booking platform offering property listing, search functionality, and a smooth booking flow within a clean user interface.',
+    impact: 'Delivered an intuitive accommodation search and booking experience by simplifying property discovery and guest reservation workflows.',
     tech: ['React', 'Node.js', 'MongoDB', 'Express'],
     link: '',
     image: '/images/stayzen.png',
   },
   {
-    _id: '3',
-    title: 'Doctor Consultation Platform',
-    description: 'Hackathon project — patients aur doctors ke beech consultation booking, appointments manage karne ke liye bana hua platform.',
-    tech: ['React', 'Node.js', 'MongoDB'],
-    link: '',
-    image: '/images/doctor-consult.png',
-  },
+  _id: '3',
+  title: 'Doctor Consultation Platform',
+  description: 'A hackathon-built healthcare platform enabling seamless appointment scheduling and consultation management between patients and doctors.',
+  impact: 'Bridged the gap between healthcare providers and patients by streamlining booking workflows and improving accessibility to medical consultations.',
+  tech: ['React', 'Node.js', 'MongoDB'],
+  link: '',
+  image: '/images/doctor-consult.png',
+}
 ];
 
 function Projects() {

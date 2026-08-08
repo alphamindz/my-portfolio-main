@@ -94,7 +94,7 @@ const Footer = () => {
                   </div>
                   <div className="contact-text">
                     <h4>Email</h4>
-                    <a href="mailto:ankur@example.com">ankur@example.com</a>
+                    <a href="mailto:ankurcse437@gmail.com">ankurcse437@gmail.com</a>
                   </div>
                 </div>
 
@@ -104,7 +104,7 @@ const Footer = () => {
                   </div>
                   <div className="contact-text">
                     <h4>Phone</h4>
-                    <a href="tel:+919876543210">+91 98765 43210</a>
+                    <a href="tel:+917985212411">+91 79852 12411</a>
                   </div>
                 </div>
 
@@ -123,16 +123,16 @@ const Footer = () => {
               <div className="contact-socials">
                 <h4>Follow Me</h4>
                 <div className="social-icons">
-                  <a href="https://github.com/ankuryadav" target="_blank" rel="noreferrer" aria-label="GitHub">
+                  <a href="https://github.com/alphamindz" target="_blank" rel="noreferrer" aria-label="GitHub">
                     <FaGithub />
                   </a>
-                  <a href="https://linkedin.com/in/ankuryadav" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                  <a href="https://www.linkedin.com/in/ankur79790?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                     <FaLinkedin />
                   </a>
-                  <a href="https://instagram.com/ninja.1ai" target="_blank" rel="noreferrer" aria-label="Instagram">
+                  <a href="https://www.instagram.com/ankur_fs_dev?igsh=MWtpMm5ydG5yOHNkcQ==" target="_blank" rel="noreferrer" aria-label="Instagram">
                     <FaInstagram />
                   </a>
-                  <a href="mailto:your-email@example.com" aria-label="Email">
+                  <a href="mailto:ankurcse437@gmail.com" aria-label="Email">
                     <FaEnvelope />
                   </a>
                 </div>
