@@ -1,16 +1,89 @@
-# React + Vite
+# Ankur Yadav — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website built with React + Vite, showcasing my projects, skills, and certifications as a Full Stack MERN Developer.
 
-Currently, two official plugins are available:
+🔗 **Live**: [my-portfolio-rho-ecru-y5sugp3p3d.vercel.app](https://my-portfolio-rho-ecru-y5sugp3p3d.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- **Frontend**: React.js, Vite, Custom CSS (Glassmorphism + Dark Theme)
+- **Icons**: react-icons
+- **Deployment**: Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- 🎨 Dark, glassmorphic UI with gold/orange gradient accents
+- 📱 Fully responsive design
+- 🖼️ Interactive certificate gallery with modal preview
+- 📊 Animated skills section with category filtering and progress bars
+- 📩 Contact form with validation
+- ⬆️ Scroll-to-top button
+- ⚡ Fast Refresh via Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Sections
+
+- **Hero** — Intro, tech stack badges, CV download, social links
+- **Skills** — Categorized technical proficiency with animated progress bars
+- **Projects** — Skill Nebula, StayZen, Zerodha Clone, Doctor Consultation Platform
+- **Certifications** — Clickable certificate gallery with full-screen modal view
+- **Footer / Contact** — Contact form, quick links, newsletter signup
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/alphamindz/portfolio.git
+cd portfolio
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+Opens the app at `http://localhost:5173`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Project Structure
+src/
+├── components/
+│ ├── Hero/
+│ ├── Skills/
+│ ├── Projects/
+│ ├── Certifications/
+│ └── Footer/
+├── App.jsx
+└── main.jsx
+public/
+├── images/
+└── Ankur_Resume.pdf
+
+
+## Connect With Me
+
+- **GitHub**: [alphamindz](https://github.com/alphamindz)
+- **LinkedIn**: [ankur79790](https://www.linkedin.com/in/ankur79790)
+- **Email**: ankurcse437@gmail.com
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
