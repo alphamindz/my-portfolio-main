@@ -2,7 +2,7 @@
 
 Personal portfolio website built with React + Vite, showcasing my projects, skills, and certifications as a Full Stack MERN Developer.
 
-🔗 **Live**: [my-portfolio-rho-ecru-y5sugp3p3d.vercel.app](https://my-portfolio-rho-ecru-y5sugp3p3d.vercel.app/)
+ **Live**: [my-portfolio-rho-ecru-y5sugp3p3d.vercel.app](https://my-portfolio-rho-ecru-y5sugp3p3d.vercel.app/)
 
 ## Tech Stack
 
